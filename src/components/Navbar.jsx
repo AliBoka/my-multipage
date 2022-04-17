@@ -8,7 +8,6 @@ const Navbar = () => {
   const [mobile, setMobile] = useState(false);
   return (
 
-    ////////////////////////////////////////ppppppppppppppppppppp
     <div className="w-full bg-primary px-3 text-white text-sm border-b border-b-rgba-white fixed">
      
      {

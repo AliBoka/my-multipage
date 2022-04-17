@@ -7,14 +7,13 @@ import ReactStars from "react-rating-stars-component";
 import {RiComputerLine} from 'react-icons/ri'
 const Home = () => {
   const [starValue, setStarValue] = useState(4)
-  let numValue = 4;
   const handleRating = (rate) => {
     setStarValue(rate)
   }
   return (
     <div className=" w-full">
       {/* ------------ first Section ------------ */}
-      <div className="flex justify-center pt-24 sm:pt-40 lg:pt-32 px-8 bg-primary relative sm:h-screen text-white">
+      <div className="flex justify-center pt-24 sm:pt-40 lg:pt-32 px-8 bg-primary  sm:h-screen text-white">
         <div className="flex flex-col">
           <div className="flex flex-col items-center text-center  text-3xl lg:text-4xl xl:text-5xl font-bold">
             <h1 className="">Advanced software, advanced</h1>
@@ -113,8 +112,8 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <img src={Bulb} className='absolute right-20 top-36 xl:right-48' />
-        <img src={bell} className='absolute left-28 bottom-20 xl:left-48' />
+        <img src={Bulb} className='absolute right-20 top-36 xl:right-48' alt='bulb' />
+        <img src={bell} className='absolute left-28 bottom-20 xl:left-48' alt='bulb' />
       </div>
     </div>
   );
