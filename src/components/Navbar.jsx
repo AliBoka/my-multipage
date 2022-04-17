@@ -8,7 +8,7 @@ const Navbar = () => {
   const [mobile, setMobile] = useState(false);
   return (
 
-    <div className="w-full bg-primary px-3 text-white text-sm border-b border-b-rgba-white fixed">
+    <div className="w-full bg-primary px-3 text-white z-50 text-sm border-b border-b-rgba-white fixed">
      
      {
             (window.onresize = () => {
@@ -65,7 +65,7 @@ const Navbar = () => {
         </div>
           </div>
 
-        <div className={mobile ? "flex flex-col mt-4" : " hidden"}>
+        <div className={mobile ? "flex flex-col mt-4 " : " hidden"}>
           <NavLink
             to="/"
             className="px-1 py-4 text-xl hover:cursor-pointer active:bg-gray-700 hover:bg-gray-700 "
