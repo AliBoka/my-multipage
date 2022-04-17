@@ -1,13 +1,22 @@
 import React, { useState } from "react";
+import "../index.css";
 import { HiOutlineArrowNarrowRight, HiOutlineCode } from "react-icons/hi";
 import userIcon from "../assets/user-icon.png";
 import bell from "../assets/bell.png";
 import Bulb from "../assets/Bulb.png";
 import ReactStars from "react-rating-stars-component";
 import { RiComputerLine } from "react-icons/ri";
-import vrImg from '../assets/VR Array 1.png'
-import lineChartImg from '../assets/Line Chart 1.png'
-import clockImg from '../assets/clock 1.png'
+import vrImg from "../assets/VR Array 1.png";
+import lineChartImg from "../assets/Line Chart 1.png";
+import clockImg from "../assets/clock 1.png";
+import webAppImg from "../assets/apps 1.png";
+import gameDevImg from "../assets/console 1.png";
+import seoImg from "../assets/startup 1.png";
+import lotImg from "../assets/cloud-computing 1.png";
+import bigImg from "../assets/link (3) 1.png";
+import CyberImg from "../assets/cyber-security 1.png";
+import mobileAppImg from "../assets/coding 1.png";
+import digiImg from "../assets/promotion (1) 1.png";
 const Home = () => {
   const [starValue, setStarValue] = useState(4);
   const handleRating = (rate) => {
@@ -152,27 +161,133 @@ const Home = () => {
               </p>
             </div>
             <div className="flex flex-col md:flex-row gap-3 lg:gap-6 xl:gap-14 justify-center w-full items-center px-10 xl:px-24 2xl:px-32 mb-10">
-              <div className="flex flex-col p-4 bg-gray-200 w-full rounded-lg  items-center cursor-pointer hover:bg-slate-50" >
+              <div className="flex flex-col p-4 bg-gray-200 w-full rounded-lg  items-center shadow-xl hover:bg-slate-50">
                 <img src={vrImg} alt="clock" className="w-28" />
                 <h2 className="font-bold my-3">Cutting Edge Technology</h2>
-                <p className="text-sm font-light text-center text-gray-700 ">Take the advantage of our cutting-edge solutions to increase your Return of Investment on IT.</p>
+                <p className="text-sm font-light text-center text-gray-700 ">
+                  Take the advantage of our cutting-edge solutions to increase
+                  your Return of Investment on IT.
+                </p>
               </div>
-              <div className="flex flex-col p-4 bg-gray-200 w-full  rounded-lg items-center cursor-pointer hover:bg-slate-50" >
+              <div className="flex flex-col p-4 bg-gray-200 w-full  rounded-lg items-center shadow-xl hover:bg-slate-50">
                 <img src={lineChartImg} alt="clock" className="w-36 my-6" />
                 <h2 className="font-bold my-3">Cutting Edge Technology</h2>
-                <p className="text-sm font-light text-center text-gray-700 ">Take the advantage of our cutting-edge solutions to increase your Return of Investment on IT.</p>
+                <p className="text-sm font-light text-center text-gray-700 ">
+                  Take the advantage of our cutting-edge solutions to increase
+                  your Return of Investment on IT.
+                </p>
               </div>
-              <div className="flex flex-col p-4 bg-gray-200 w-full  rounded-lg items-center cursor-pointer hover:bg-slate-50">
+              <div className="flex flex-col p-4 bg-gray-200 w-full  rounded-lg items-center shadow-xl hover:bg-slate-50">
                 <img src={clockImg} alt="clock" className="w-28" />
                 <h2 className="font-bold my-3">Cutting Edge Technology</h2>
-                <p className="text-sm font-light text-center text-gray-700 ">Take the advantage of our cutting-edge solutions to increase your Return of Investment on IT.</p>
+                <p className="text-sm font-light text-center text-gray-700 ">
+                  Take the advantage of our cutting-edge solutions to increase
+                  your Return of Investment on IT.
+                </p>
               </div>
-        
             </div>
           </div>
-        <div className="border-t border-gray-300 w-full my-8"></div>
+          <div className="border-t border-gray-300 w-full mt-8"></div>
         </div>
-        
+        <div className="w-full bg-slate-100">
+          <div className="flex flex-col justify-center items-center pb-16">
+            <h1 className="text-2xl xl:text-3xl font-semibold mt-14 mb-10">What we do</h1>
+            <div className="what-we-do px-8 py-8 ">
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 flex justify-center items-center bg-red-100 rounded-xl">
+                  <img src={webAppImg} alt="webAppImg" className="w-8" />
+                </div>
+                <h2 className="mt-8 mb-4 text-lg font-medium">
+                  Web Application
+                </h2>
+                <p className="text-xs text-gray-500 text-center px-4">
+                  Platform independant business solutions for maximum
+                  availability
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 flex justify-center items-center bg-amber-100 rounded-xl">
+                  <img src={gameDevImg} alt="gameDevImg" className="w-8" />
+                </div>
+                <h2 className="mt-8 mb-4 text-lg font-medium">
+                  Game Develepmet
+                </h2>
+                <p className="text-xs text-gray-500 text-center px-4">
+                  Platform independant business solutions for maximum
+                  availability
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 flex justify-center items-center bg-blue-100 rounded-xl">
+                  <img src={seoImg} alt="seoImg" className="w-8" />
+                </div>
+                <h2 className="mt-8 mb-4 text-lg font-medium">SEO</h2>
+                <p className="text-xs text-gray-500 text-center px-4">
+                  Platform independant business solutions for maximum
+                  availability
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 flex justify-center items-center bg-fuchsia-200 rounded-xl">
+                  <img src={lotImg} alt="lotImg" className="w-8" />
+                </div>
+                <h2 className="mt-8 mb-4 text-lg font-medium">
+                  Iot/ AI/ RObotic
+                </h2>
+                <p className="text-xs text-gray-500 text-center px-4">
+                  Platform independant business solutions for maximum
+                  availability
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 flex justify-center items-center bg-stone-200 rounded-xl">
+                  <img src={bigImg} alt="bigImg" className="w-8" />
+                </div>
+                <h2 className="mt-8 mb-4 text-lg font-medium">BIG Data</h2>
+                <p className="text-xs text-gray-500 text-center px-4">
+                  Platform independant business solutions for maximum
+                  availability
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 flex justify-center items-center bg-gray-200 rounded-xl">
+                  <img src={CyberImg} alt="CyberImg" className="w-8" />
+                </div>
+                <h2 className="mt-8 mb-4 text-lg font-medium">
+                  Cyber Security
+                </h2>
+                <p className="text-xs text-gray-500 text-center px-4">
+                  Platform independant business solutions for maximum
+                  availability
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 flex justify-center items-center bg-violet-200 rounded-xl">
+                  <img src={mobileAppImg} alt="mobileAppImg" className="w-8" />
+                </div>
+                <h2 className="mt-8 mb-4 text-lg font-medium">
+                  Mobile Applications
+                </h2>
+                <p className="text-xs text-gray-500 text-center px-4">
+                  Platform independant business solutions for maximum
+                  availability
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <div className="w-16 h-16 flex justify-center items-center bg-emerald-100 rounded-xl">
+                  <img src={digiImg} alt="digiImg" className="w-8" />
+                </div>
+                <h2 className="mt-8 mb-4 text-lg font-medium">
+                  Digital Marketing
+                </h2>
+                <p className="text-xs text-gray-500 text-center px-4">
+                  Platform independant business solutions for maximum
+                  availability
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
