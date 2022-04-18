@@ -17,17 +17,100 @@ import bigImg from "../assets/link (3) 1.png";
 import CyberImg from "../assets/cyber-security 1.png";
 import mobileAppImg from "../assets/coding 1.png";
 import digiImg from "../assets/promotion (1) 1.png";
-import bellAngleImg from '../assets/Bell Angle 1.png'
-import succlentImg from '../assets/Succlent angle 1.png'
-import vector1Img from '../assets/Vector 1.png'
-import vector2Img from '../assets/Vector 2.png'
-import vector3Img from '../assets/Vector 3.png'
+import bellAngleImg from "../assets/Bell Angle 1.png";
+import succlentImg from "../assets/Succlent angle 1.png";
+import vector1Img from "../assets/Vector 1.png";
+import vector2Img from "../assets/Vector 2.png";
+import vector3Img from "../assets/Vector 3.png";
+import slide1 from "../assets/Rectangle 12.png";
+import slide2 from "../assets/Rectangle 13.png";
+import slide3 from "../assets/Rectangle 14.png";
+import slide4 from "../assets/Rectangle 15.png";
+import AliceCarousel from "react-alice-carousel";
+import "react-alice-carousel/lib/alice-carousel.css";
 
 const Home = () => {
   const [starValue, setStarValue] = useState(4);
   const handleRating = (rate) => {
     setStarValue(rate);
+    const handleDragStart = (e) => e.preventDefault();
   };
+  const items = [
+    <div className="flex flex-col rounded-md w-80 h-[31rem]  my-10  shadow-lg ">
+      <img src={slide1} alt="slide1" className="rounded-md w-80" />
+      <div className="flex flex-col mt-3 p-3">
+        <p className="text-xs font-bold text-gray-500">12/12/2020</p>
+        <p className="text-sm font-bold my-3">Holoplot</p>
+        <p className="text-gray-800 text-justify text-xs leading-7 mt-2">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an
+        </p>
+        <div className="flex w-full justify-end">
+          <h1 className="flex items-center font-bold cursor-pointer py-3">
+            Read more
+            <HiOutlineArrowNarrowRight className="text-2xl ml-1" />{" "}
+          </h1>
+        </div>
+      </div>
+    </div>,
+    <div className="flex flex-col rounded-md w-80 h-[31rem]  my-10  shadow-lg ">
+      <img src={slide2} alt="slide2" className="rounded-md w-80 " />
+      <div className="flex flex-col mt-3 p-3">
+        <p className="text-xs font-bold text-gray-500">12/12/2020</p>
+        <p className="text-sm font-bold my-3">Nawaloka Hospitals Mobile App</p>
+        <p className="text-gray-800 text-justify text-xs leading-7 mt-2">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an
+        </p>
+        <div className="flex w-full justify-end">
+          <h1 className="flex items-center font-bold cursor-pointer py-3">
+            Read more
+            <HiOutlineArrowNarrowRight className="text-2xl ml-1" />
+          </h1>
+        </div>
+      </div>
+    </div>,
+    <div className="flex flex-col rounded-md w-80 h-[31rem]  my-10  shadow-lg ">
+      <img src={slide4} alt="slide4" className="rounded-md w-80 " />
+      <div className="flex flex-col mt-3 p-3">
+        <p className="text-xs font-bold text-gray-500">12/12/2020</p>
+        <p className="text-sm font-bold my-3">
+          Smart Solution For Ambuluwawa Biodiversity Complex
+        </p>
+        <p className="text-gray-800 text-justify text-xs leading-7 mt-2">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an
+        </p>
+        <div className="flex w-full justify-end">
+          <h1 className="flex items-center font-bold cursor-pointer py-3">
+            Read more
+            <HiOutlineArrowNarrowRight className="text-2xl ml-1" />
+          </h1>
+        </div>
+      </div>
+    </div>,
+    <div className="flex flex-col rounded-md w-80 h-[31rem]  my-10  shadow-lg ">
+      <img src={slide1} alt="slide3" className="rounded-md w-80 " />
+      <div className="flex flex-col mt-3 p-3">
+        <p className="text-xs font-bold text-gray-500">12/12/2020</p>
+        <p className="text-sm font-bold my-3">Nawaloka Hospitals Mobile App</p>
+        <p className="text-gray-800 text-justify text-xs leading-7 mt-2">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an
+        </p>
+        <div className="flex w-full justify-end">
+          <h1 className="flex items-center font-bold cursor-pointer py-3">
+            Read more
+            <HiOutlineArrowNarrowRight className="text-2xl ml-1" />
+          </h1>
+        </div>
+      </div>
+    </div>,
+  ];
   return (
     <div className=" w-full">
       {/* ------------ first Section ------------ */}
@@ -197,7 +280,9 @@ const Home = () => {
         </div>
         <div className="w-full bg-slate-100">
           <div className="flex flex-col justify-center items-center pb-16">
-            <h1 className="text-2xl xl:text-3xl font-semibold mt-14 mb-10">What we do</h1>
+            <h1 className="text-2xl xl:text-3xl font-semibold mt-14 mb-10">
+              What we do
+            </h1>
             <div className="what-we-do px-8 py-8 ">
               <div className="flex flex-col items-center">
                 <div className="w-16 h-16 flex justify-center items-center bg-red-100 rounded-xl">
@@ -295,29 +380,86 @@ const Home = () => {
           </div>
         </div>
         <div className="w-full flex justify-center items-center h-[30rem] text-white bg-slate-100 ">
-            <div className="bg-primary px-24 lg:px-28 xl:px-40 2xl:px-44 py-24 flex flex-col md:flex-row items-center w-full justify-between relative">
-              <div className="flex flex-col items-center">
-                <h1 className="text-4xl lg:text-5xl xl:text-6xl font-medium">6</h1>
-                <p className="text-xs lg:text-sm xl:text-base">ppy Clients</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <h1 className="text-4xl lg:text-5xl xl:text-6xl font-medium">11</h1>
-                <p className="text-xs lg:text-sm xl:text-base">Compled Projects</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <h1 className="text-4xl lg:text-5xl xl:text-6xl font-medium">7M</h1>
-                <p className="text-xs lg:text-sm xl:text-base">anssactions</p>
-              </div>
-              <div className="flex flex-col items-center">
-                <h1 className="text-4xl lg:text-5xl xl:text-6xl font-medium">6000+</h1>
-                <p className="text-xs lg:text-sm xl:text-base">Customers</p>
-              </div>
-              <img src={bellAngleImg} alt="bellAngleImg" className="absolute w-24 -top-14 right-36 " />
-              <img src={succlentImg} alt="succlentImg" className="absolute w-20 -bottom-7 left-48 " />
-              <img src={vector1Img} alt="vector1Img" className="absolute w-32 bottom-0 left-0 " />
-              <img src={vector2Img} alt="vector2Img" className="absolute w-32 -top-16 left-24 " />
-              <img src={vector3Img} alt="vector3Img" className="absolute w-40 -top-8 right-44 " />
+          <div className="bg-primary px-24 lg:px-28 xl:px-40 2xl:px-44 py-24 flex flex-col md:flex-row items-center w-full justify-between relative">
+            <div className="flex flex-col items-center">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-medium">
+                6
+              </h1>
+              <p className="text-xs lg:text-sm xl:text-base">ppy Clients</p>
             </div>
+            <div className="flex flex-col items-center">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-medium">
+                11
+              </h1>
+              <p className="text-xs lg:text-sm xl:text-base">
+                Compled Projects
+              </p>
+            </div>
+            <div className="flex flex-col items-center">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-medium">
+                7M
+              </h1>
+              <p className="text-xs lg:text-sm xl:text-base">anssactions</p>
+            </div>
+            <div className="flex flex-col items-center">
+              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-medium">
+                6000+
+              </h1>
+              <p className="text-xs lg:text-sm xl:text-base">Customers</p>
+            </div>
+            <img
+              src={bellAngleImg}
+              alt="bellAngleImg"
+              className="absolute w-24 -top-14 right-36 "
+            />
+            <img
+              src={succlentImg}
+              alt="succlentImg"
+              className="absolute w-20 -bottom-7 left-48 "
+            />
+            <img
+              src={vector1Img}
+              alt="vector1Img"
+              className="absolute w-32 bottom-0 left-0 "
+            />
+            <img
+              src={vector2Img}
+              alt="vector2Img"
+              className="absolute w-32 -top-16 left-24 "
+            />
+            <img
+              src={vector3Img}
+              alt="vector3Img"
+              className="absolute w-40 -top-8 right-44 "
+            />
+          </div>
+        </div>
+        <div className="bg-slate-100 px-10 ">
+          <AliceCarousel
+            mouseTracking
+            autoPlay={true}
+            animationType={"fadeout"}
+            animationDuration={1000}
+            autoPlayInterval={5000}
+            infinite
+            autoHeight
+            // autoWidth
+            items={items}
+            responsive={{
+              0: {
+                items: 1,
+              },
+              640: {
+                items: 2,
+              },
+              1000: {
+                items: 3,
+              },
+              1400: {
+                items: 4,
+              },
+            }}
+          />
         </div>
       </div>
     </div>
