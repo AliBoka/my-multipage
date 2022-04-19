@@ -1,8 +1,11 @@
 import React from 'react'
+import AboutFirstSection from './AboutFirstSection'
 
 const AboutUs = () => {
   return (
-    <div className='h-screen bg-black'>AboutUs</div>
+    <div className='h-screen '>
+        <AboutFirstSection/>
+    </div>
   )
 }
 
