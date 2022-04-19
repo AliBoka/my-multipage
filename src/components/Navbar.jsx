@@ -3,7 +3,8 @@ import { NavLink } from "react-router-dom";
 import { Sling as Hamburger } from "hamburger-react";
 let mobileStyle = "flex flex-col  h-96 absolute bg-primary left-0 right-0 px-2";
 let desktopStyle = "flex items-center justify-between h-14 ";
-
+let inActive = 'px-5 md:px-6 xl:px-7 py-4 hover:cursor-pointer'
+let active = 'px-5 md:px-6 xl:px-7 py-4 hover:cursor-pointer border-b border-secondary '
 const Navbar = () => {
   const [mobile, setMobile] = useState(false);
   return (
@@ -31,30 +32,30 @@ const Navbar = () => {
         <div className="hidden sm:flex items-center">
           <NavLink
             to="/"
-            className="px-5 md:px-6 xl:px-7 py-4 hover:cursor-pointer "
+            className={({isActive}) => (isActive ? active : inActive)}
           >
             Home
           </NavLink>
           <NavLink
-            to="/"
-            className="px-5 md:px-6 xl:px-7 py-4 hover:cursor-pointer "
+            to="/about-us"
+             className={({isActive}) => (isActive ? active : inActive)}
           >
             About us
           </NavLink>
           <NavLink
-            to="/"
-            className="px-5 md:px-6 xl:px-7 py-4 hover:cursor-pointer "
+            to="/service"
+             className={({isActive}) => (isActive ? active : inActive)}
           >
             Services
           </NavLink>
           <NavLink
-            to="/"
-            className="px-5 md:px-6 xl:px-7 py-4 hover:cursor-pointer "
+            to="/news"
+             className={({isActive}) => (isActive ? active : inActive)}
           >
             News
           </NavLink>
           <NavLink
-            to="/"
+            to="/contact-us"
             className="px-5 py-1.5 ml-4 rounded-md hover:cursor-pointer border border-secondary"
           >
             Contact us
@@ -73,7 +74,7 @@ const Navbar = () => {
             Home
           </NavLink>
           <NavLink
-            to="/"
+            to="/about-us"
             className="px-1 py-4 text-xl hover:cursor-pointer active:bg-gray-700 hover:bg-gray-700 "
           >
             About us
@@ -85,13 +86,13 @@ const Navbar = () => {
             Services
           </NavLink>
           <NavLink
-            to="/"
+            to="/news"
             className="px-1 py-4 text-xl hover:cursor-pointer active:bg-gray-700 hover:bg-gray-700 "
           >
             News
           </NavLink>
           <NavLink
-            to="/"
+            to="/contact-us"
             className="px-1 py-4 text-xl hover:cursor-pointer active:bg-gray-700 hover:bg-gray-700 "
           >
             Contact us
