@@ -4,7 +4,6 @@ import HomeFifthSection from "./HomeFifthSection";
 import HomeFirstSection from "./HomeFirstSection";
 import HomeFourthSection from "./HomeFourthSection";
 import HomeSecondSection from "./HomeSecondSection";
-import HomeSixthSection from "./HomeSixthSection";
 import HomeThirdSection from "./HomeThirdSection";
 
 
@@ -22,7 +21,7 @@ const Home = () => {
     <HomeThirdSection/>
     <HomeFourthSection/>
     <HomeFifthSection/>
-    <HomeSixthSection/>
+  
       
         
         
