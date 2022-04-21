@@ -5,7 +5,7 @@ import lightBulb from '../../assets/lightbulb 1.png'
 import vector1 from '../../assets/Vector 5.png'
 import vector2 from '../../assets/Vector 4.png'
 
-const AboutFirstSection = () => {
+const NewsFirstSection = () => {
   return (
     <div className="w-full pt-32 flex justify-center items-center relative">
       <div className="flex flex-col w-full sm:w-96">
@@ -33,4 +33,4 @@ const AboutFirstSection = () => {
   );
 };
 
-export default AboutFirstSection;
+export default NewsFirstSection;

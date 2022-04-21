@@ -14,7 +14,7 @@ import userImg5 from "../../assets/Ellipse 7-3.png";
 import userImg6 from "../../assets/Ellipse 7-4.png";
 import userImg7 from "../../assets/Ellipse 7-5.png";
 
-const AboutUsSecondSection = () => {
+const NewsSecondSection = () => {
   return (
     <div className="w-full px-12 xl:px-36 pt-9">
       <div className="flex flex-col ">
@@ -191,4 +191,4 @@ const AboutUsSecondSection = () => {
   );
 };
 
-export default AboutUsSecondSection;
+export default NewsSecondSection;
