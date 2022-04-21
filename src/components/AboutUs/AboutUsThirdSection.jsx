@@ -9,7 +9,7 @@ import brandImg6 from '../../assets/uc 1.png'
 
 const AboutUsThirdSection = () => {
   return (
-    <div className="flex flex-col w-full md:py-20 py-12 px-16 bg-primary  my-7 justify-center items-center text-white">
+    <div className="flex flex-col w-full md:py-20 py-12 px-16 bg-primary   justify-center items-center text-white">
       <div className="flex flex-col text-center md:w-4/5 w-full">
           <h1 className="text-2xl font-medium mb-6">Who we are engaged with...</h1>
           <p className="text-sm lg:text-base font-light leading-6">We partner with humble, trusting leaders that think strategically. Businessmen and women who believe in the change they’re making, embrace their mission and want to bring in a partner to accelerate their growth.</p>
