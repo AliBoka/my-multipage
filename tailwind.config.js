@@ -16,6 +16,9 @@ module.exports = {
       },
       rotate : {
         '360' : '360deg'
+      },
+      lineHeight: {
+        '12': '3.5rem',
       }
     },
   },
