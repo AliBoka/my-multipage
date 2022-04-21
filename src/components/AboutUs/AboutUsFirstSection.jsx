@@ -2,7 +2,7 @@ import React from "react";
 import firstImg from '../../assets/Group 100.png'
 const AboutUsFitstSection = () => {
   return (
-    <div className="">
+   
       <div className="flex flex-col md:flex-row bg-slate-200 px-8 items-center md:h-screen justify-center pt-20 md:pt-0">
         <div className="flex flex-col md:w-1/2 w-full">
           <h1 className="text-2xl lg:text-3xl xl:text-4xl font-semibold mb-7 xl:mb-12">
@@ -21,7 +21,7 @@ const AboutUsFitstSection = () => {
             <img src={firstImg} alt="firstImg" />
           </div>
       </div>
-    </div>
+    
   );
 };
 
