@@ -24,3 +24,6 @@ body {
   width: 100%;
   
 }
+.bg-contact{ 
+  background-image:  linear-gradient(180deg, rgba(255, 255, 255, 0.2) -5.41%, #000000 108.31%),url('/src/assets/Rectangle\ 126.png');
+}
